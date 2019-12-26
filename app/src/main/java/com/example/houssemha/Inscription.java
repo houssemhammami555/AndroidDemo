@@ -2,6 +2,7 @@ package com.example.houssemha;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -46,12 +47,12 @@ public class Inscription extends AppCompatActivity implements View.OnClickListen
          db = new EtudiantHandler(this);
 
 
-        List<Etudiant> etdz = db.getAllEtudiants();
+      /*  List<Etudiant> etdz = db.getAllEtudiants();
         String mess ="";
         for (Etudiant et :etdz){
             mess+="id:"+et.getId()+"Nom:"+et.getNom()+"Prenom"+et.getPrenom();
         }
-    //    Log.d("mylist",mess);
+     Log.d("mylist",mess);*/
 
 
 
@@ -73,6 +74,8 @@ public class Inscription extends AppCompatActivity implements View.OnClickListen
 
 
           case R.id.annI:{
+              Intent in = new Intent(this, Home.class);
+              startActivity(in);
             Toast.makeText(this, "ANNULER !",Toast.LENGTH_SHORT).show();break; }
         }
         }
