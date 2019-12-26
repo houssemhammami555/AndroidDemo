@@ -67,16 +67,24 @@ public class Inscription extends AppCompatActivity implements View.OnClickListen
                   Toast.makeText(this, "il faut remplir tout les champs!",Toast.LENGTH_SHORT).show();break;}
                 else {
                     db.insertEtudiant(new Etudiant(1,nomInput.getText().toString(),prenomInput.getText().toString(),phoneInput.getText().toString(),passInput.getText().toString()));
-                    Toast.makeText(this, nomInput.getText().toString()+"ajout avec success!",Toast.LENGTH_SHORT).show(); break;
+                    //Toast.makeText(this, nomInput.getText().toString()+"ajout avec success!",Toast.LENGTH_SHORT).show();
+                    Intent goHome = new Intent(this, Home.class);
+                    goHome.putExtra("new", " " + nomInput.getText().toString() + " ajout avec success!");
+                    startActivity(goHome);
+                    break;
                 }
 
+
+                //thread.start();
                 }
 
 
           case R.id.annI:{
-              Intent in = new Intent(this, Home.class);
-              startActivity(in);
-            Toast.makeText(this, "ANNULER !",Toast.LENGTH_SHORT).show();break; }
+              Intent annuler = new Intent(this, Home.class);
+              annuler.putExtra("cancel", " Opération Annuler ");
+              startActivity(annuler);
+              break;
+          }
         }
         }
 

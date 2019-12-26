@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Home extends Activity implements View.OnClickListener {
 
         Button btn1,btn2,btn3;
+    String msg = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,17 @@ public class Home extends Activity implements View.OnClickListener {
         btn3=findViewById(R.id.button3);
         btn3.setOnClickListener(this);
         EtudiantHandler db= new EtudiantHandler(this);
+
+
+        Intent intent = getIntent();
+        if (intent.hasExtra("new")) {
+            msg = intent.getExtras().getString("new");
+            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+        }
+        if (intent.hasExtra("cancel")) {
+            msg = intent.getExtras().getString("cancel");
+            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+        }
 
     }
 
