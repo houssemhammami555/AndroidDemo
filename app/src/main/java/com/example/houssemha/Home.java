@@ -35,6 +35,10 @@ public class Home extends Activity implements View.OnClickListener {
             msg = intent.getExtras().getString("cancel");
             Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         }
+        if (intent.hasExtra("check")) {
+            msg = intent.getExtras().getString("check");
+            Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+        }
 
     }
 

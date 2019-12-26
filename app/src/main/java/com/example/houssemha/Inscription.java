@@ -71,6 +71,10 @@ public class Inscription extends AppCompatActivity implements View.OnClickListen
                     Intent goHome = new Intent(this, Home.class);
                     goHome.putExtra("new", " " + nomInput.getText().toString() + " ajout avec success!");
                     startActivity(goHome);
+                    nomInput.setText("");
+                    prenomInput.setText("");
+                    phoneInput.setText("");
+                    passInput.setText("");
                     break;
                 }
 
