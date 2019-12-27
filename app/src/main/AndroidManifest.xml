@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.houssemha">
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyC_fUdP_YcJvtRWq4nBBfAKjU1JIcAqAzg"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

@@ -9,13 +9,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bgconn"
         android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backtohome"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/icon" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:layout_marginTop="5pt"
             android:layout_marginBottom="10pt"
             android:gravity="center"
             android:text="Lite des Etudiant"
@@ -25,13 +32,11 @@
             android:id="@+id/list"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:dividerHeight="1dp" />
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="Back" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:dividerHeight="1dp"
+            android:foregroundGravity="center" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

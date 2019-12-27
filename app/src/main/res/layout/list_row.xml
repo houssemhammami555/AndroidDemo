@@ -3,42 +3,127 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="5dip" >
+    android:padding="5dip">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp">
-    <TextView
-        android:id="@+id/nom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginRight="20dp"
-        android:textSize="17dp" />
-    <TextView
-        android:id="@+id/prenom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/nom"
-        android:layout_marginRight="20dp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:textSize="17dp" />
-    <TextView
-        android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/prenom"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginRight="20dp"
-        android:textSize="17dp" />
-</LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nom :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#3D5AFE"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/nom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:textColor="#6200EA"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Prénom :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#3D5AFE"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/prenom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nom"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:textColor="#6200EA"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Téléphone :"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="#3D5AFE"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/prenom"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:textColor="#6200EA"
+                        android:textSize="24sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

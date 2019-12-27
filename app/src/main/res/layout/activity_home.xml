@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
+        android:background="@drawable/bghome"
         android:orientation="vertical">
 
         <TableLayout
@@ -26,8 +26,10 @@
                     android:id="@+id/button1"
                     android:layout_width="130dp"
                     android:layout_height="78dp"
-                    android:background="@drawable/button_bg_rounded_corners"
-                    android:text="Inscrtiption" />
+                    android:background="@drawable/btn_menu"
+                    android:text="Inscrtiption"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
 
             </TableRow>
 
@@ -41,8 +43,10 @@
                     android:id="@+id/button2"
                     android:layout_width="130dp"
                     android:layout_height="78dp"
-                    android:background="@drawable/button_bg_rounded_corners"
-                    android:text="Button" />
+                    android:background="@drawable/btn_menu"
+                    android:text="Connexion"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
 
             </TableRow>
 
@@ -56,8 +60,11 @@
                     android:id="@+id/button3"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/button_bg_rounded_corners"
-                    android:text="Button" />
+                    android:background="@drawable/btn_menu"
+                    android:text="List des Etudiants"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
             </TableRow>
 

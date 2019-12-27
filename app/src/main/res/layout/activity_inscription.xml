@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg"
+        android:background="@drawable/bgincsrir"
         android:orientation="vertical">
 
         <LinearLayout
@@ -29,7 +29,7 @@
                 android:hint="Nom"
                 android:inputType="textPersonName"
                 android:textColor="#FFEFEF"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#304FFE" />
 
             <EditText
                 android:id="@+id/prenom"
@@ -41,7 +41,7 @@
                 android:hint="Prénom"
                 android:inputType="textPersonName"
                 android:textColor="#FFEFEF"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#304FFE" />
 
             <EditText
                 android:id="@+id/pnum"
@@ -53,7 +53,7 @@
                 android:hint="Télephone"
                 android:inputType="phone"
                 android:textColor="#FFEFEF"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#304FFE" />
 
 
             <EditText
@@ -66,7 +66,7 @@
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:textColor="#FFEFEF"
-                android:textColorHint="#FFFFFF" />
+                android:textColorHint="#304FFE" />
 
             <LinearLayout
                 android:layout_width="match_parent"
