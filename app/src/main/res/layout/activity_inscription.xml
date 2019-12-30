@@ -28,7 +28,7 @@
                 android:ems="10"
                 android:hint="Nom"
                 android:inputType="textPersonName"
-                android:textColor="#FFEFEF"
+                android:textColor="#304FFE"
                 android:textColorHint="#304FFE" />
 
             <EditText
@@ -40,7 +40,7 @@
                 android:ems="10"
                 android:hint="Prénom"
                 android:inputType="textPersonName"
-                android:textColor="#FFEFEF"
+                android:textColor="#304FFE"
                 android:textColorHint="#304FFE" />
 
             <EditText
@@ -52,7 +52,7 @@
                 android:ems="10"
                 android:hint="Télephone"
                 android:inputType="phone"
-                android:textColor="#FFEFEF"
+                android:textColor="#304FFE"
                 android:textColorHint="#304FFE" />
 
 
@@ -65,7 +65,7 @@
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:textColor="#FFEFEF"
+                android:textColor="#304FFE"
                 android:textColorHint="#304FFE" />
 
             <LinearLayout

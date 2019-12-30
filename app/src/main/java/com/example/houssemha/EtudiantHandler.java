@@ -107,7 +107,7 @@ public ArrayList<Etudiant>getAllEtudiants(){
         return  cursorToEtudiants(c);
 }
 
-// and this method used in other activity to show data in list !
+    // and this method used in other activity to show data in list ! -- i created it ^^
 public  ArrayList<HashMap<String,String>> getEtudiants(){
         SQLiteDatabase db= this.getWritableDatabase();
         ArrayList<HashMap<String, String>> Etudiant_list = new ArrayList<>();

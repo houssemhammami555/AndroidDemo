@@ -28,8 +28,8 @@
                 android:ems="10"
                 android:hint="Téléphone"
                 android:inputType="phone"
-                android:textColor="#FFEFEF"
-                android:textColorHint="#FFFFFF" />
+                android:textColor="#460797"
+                android:textColorHint="#460797" />
 
             <EditText
                 android:id="@+id/pass"
@@ -40,8 +40,8 @@
                 android:ems="10"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:textColor="#FFEFEF"
-                android:textColorHint="#FFFFFF" />
+                android:textColor="#460797"
+                android:textColorHint="#460797" />
 
             <LinearLayout
                 android:layout_width="match_parent"
