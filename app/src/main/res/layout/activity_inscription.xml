@@ -9,94 +9,74 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bgincsrir"
+
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="150pt"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="30pt"
-            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Nom" />
 
-            <EditText
-                android:id="@+id/nom"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_border"
-                android:ems="10"
-                android:hint="Nom"
-                android:inputType="textPersonName"
-                android:textColor="#FFEFEF"
-                android:textColorHint="#304FFE" />
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
 
-            <EditText
-                android:id="@+id/prenom"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_border"
-                android:ems="10"
-                android:hint="Prénom"
-                android:inputType="textPersonName"
-                android:textColor="#FFEFEF"
-                android:textColorHint="#304FFE" />
+            android:ems="10"
 
-            <EditText
-                android:id="@+id/pnum"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_border"
-                android:ems="10"
-                android:hint="Télephone"
-                android:inputType="phone"
-                android:textColor="#FFEFEF"
-                android:textColorHint="#304FFE" />
+            android:inputType="textPersonName"
+            android:textColor="#304FFE"
+          />
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Prénom" />
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/edittext_border"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:textColor="#FFEFEF"
-                android:textColorHint="#304FFE" />
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+            android:ems="10"
 
-                <Button
-                    android:id="@+id/inscrire"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_primary"
-                    android:text="Inscrire"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
+            android:inputType="textPersonName"
+            android:textColor="#304FFE"
+          />
 
-                <Button
-                    android:id="@+id/annI"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/btn_danger"
-                    android:text="Annuler"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp" />
-            </LinearLayout>
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+
+            android:ems="10"
+
+            android:inputType="textPassword"
+            android:textColor="#304FFE"
+         />
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ajouter" />
+
+        <Button
+            android:id="@+id/annuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="annuler" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

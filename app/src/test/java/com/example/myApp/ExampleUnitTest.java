@@ -1,4 +1,4 @@
-package com.example.houssemha;
+package com.example.myApp;
 
 import org.junit.Test;
 

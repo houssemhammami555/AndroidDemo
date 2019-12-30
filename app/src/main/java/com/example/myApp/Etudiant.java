@@ -1,16 +1,16 @@
-package com.example.houssemha;
+package com.example.myApp;
 
 public class Etudiant {
 
     int id;
-    String nom,prenom,password, phoneNumber;
+    String nom,prenom,password;
 
-    public Etudiant(int id, String nom, String prenom, String phoneNumber, String password) {
+    public Etudiant(int id, String nom, String prenom,String password) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.password = password;
-        this.phoneNumber = phoneNumber;
+
     }
 
     public Etudiant() {
@@ -48,11 +48,5 @@ public class Etudiant {
         this.password = password;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
 }
